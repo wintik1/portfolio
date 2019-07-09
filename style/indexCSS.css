@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {padding: 0;
+	margin: 0;
+}
+
+body, html {
+    font-size: 14px;
+    background: url('../galery/macbook.jpg') no-repeat center 0;
+    background-size: 100% 100%;
+    
+}
+li {list-style: none; }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 97%;
+    margin: 100px auto;
+    max-width: 1450px;
+    min-width: 968px;
+    background-color: #ededed;
+    opacity: 0.98;
+    box-shadow: -2px 2px 2px #999999;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: -1px -1px 2px #ededed;
+    overflow: hidden;
+
+}
+.content_left {
+    width: 40%;
+    
+    box-sizing: border-box;
+    height: 600px;
+    background: url("../galery/photo10.png") no-repeat center center;
+    background-size: cover;
+    
+}    
+
+
+
+.content_right {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 30px;
+    
+}
+.content_right h1 {
+    margin-top: 40px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+/*мои знания*/
+.my_know {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.know h3,
+.new_know h3 {
+    margin-left:-70px;
+    color: #a96778;
+}
+
+.know li,
+.new_know li {
+    list-style: none;
+    line-height: 1.5em;
+    color: #4b4748;
+}
+
+
+/*контакты*/
+.contacts {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact {
+    display: flex;
+    margin-top: 40px;
+}
+.contact ul {
+    line-height: 2em;
+    min-width: 150px;
+}
+.contact ul:last-child li:nth-child(3) {
+    color: red;
+}
+.contact ul:last-child {
+    margin-left: 20px;
+}
+
+/*соцсети*/
+.network {
+    min-height: 50px;
+    min-width: 200px;
+    margin-top: 90px;
+}
+.network li {
+    display: inline-block;
+    width: 40px;
+    height:40px;
+    margin: 5px;
+    
+   
+}
+.network li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.network li:first-child a {
+    background: url('../galery/icon-viber.png') no-repeat center center;
+    background-size: cover;
+}
+.network li:nth-child(2) a {
+    background: url('../galery/icon-telegram.png') no-repeat center center;
+    background-size: cover;
+}
+.network li:last-child a {
+    background: url('../galery/220px-VK-logo.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.works {
+    width: 97%;
+    min-height: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+.works_item h1 {
+    color: #b95c7b;
+    opacity: 1;
+    
+}
+
+.works_item_ul {
+
+    displaY: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.works_item_ul li {
+    min-width: 150px;
+    min-height: 250px;
+    
+    padding: 10px 0px;
+}
+
+.works_item_ul li a {
+    display: block;
+    height: 100%;
+    border: 3px solid transparent;
+    box-shadow: 0 0 4px black;
+    border-radius: 1%;
+}
+.works_item_ul li a:hover,
+.works_item_ul li a:active {
+    border-color: red;
+}
+
+.works_item_ul li:nth-child(1) a {
+    background: url("../galery/wildberries.jpg") no-repeat center 0;
+    background-size: 100% auto;
+}
+.works_item_ul li:nth-child(2) a {
+    background: url("../galery/Car_Money.png") no-repeat center 0;
+    background-size: 100% auto;
+}
+.works_item_ul li:nth-child(3) a {
+    background: url("../galery/newidols.jpg") no-repeat center 0;
+    background-size: 100% auto;
+}
+.works_item_ul li:nth-child(4) a {
+    background: url("../galery/krest_zero.png") no-repeat center 0;
+    background-size: cover;
+}
+.works_item_ul li:nth-child(5) a {
+    background: url("../galery/Remont.png") no-repeat 0 center ;
+    background-size:cover;
+}
+.works_item_ul li:nth-child(6) a {
+    background: url("../galery/Question.png") no-repeat ;
+    background-size: 100% 100%;
+}
+
+
+
+@media screen and (max-width: 415px) {
+    .content {
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px;
+        min-width: 250px;
+        height: auto;
+
+
+
+    }
+
+    .content_left {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .content_right {
+        width: 100%;
+        padding:0;
+        margin: 0 auto;
+    }
+    .content_right h1 {
+        margin:0;
+        font-size: 14px;
+    }
+
+
+    .contacts {
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        margin: 20px auto;
+    }
+    .contact,
+    .contact ul {
+        margin: 20 auto;
+    }
+    
+}
